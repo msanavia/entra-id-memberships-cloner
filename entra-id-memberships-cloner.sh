@@ -34,7 +34,7 @@ clone_groups(){
 if [ $(validate_input "$1" "$2") == "users" ]; then
     echo "Cloning memberships between 2 users."
     clone_users "$1" "$2"
-elif [ $(validate_input "$1" "$2") == "users" ]; then
+elif [ $(validate_input "$1" "$2") == "groups" ]; then
     echo "Cloning memberships between 2 groups."
     clone_groups "$1" "$2"
 fi
